@@ -1,0 +1,10 @@
+# Webarchive source files (large, not needed in repo)
+*.webarchive
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
