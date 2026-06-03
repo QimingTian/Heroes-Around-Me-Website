@@ -1,12 +1,30 @@
 ---
-description: Push HAM website changes to the official GitHub repository
+description: Keep HAM website in sync with the official GitHub repository
 alwaysApply: true
 ---
 
-# Git remote and pushes
+# Git sync with GitHub
 
-This project deploys to [QimingTian/Heroes-Around-Me-Website](https://github.com/QimingTian/Heroes-Around-Me-Website).
+This project lives at [QimingTian/Heroes-Around-Me-Website](https://github.com/QimingTian/Heroes-Around-Me-Website).
 
 - **Remote**: `origin` → `https://github.com/QimingTian/Heroes-Around-Me-Website.git`
-- When the user asks to push or publish the site, commit on `main` and run `git push origin main` (one commit per push unless they ask otherwise).
-- Do not change `git config` or force-push `main` unless the user explicitly requests it.
+- **Branch**: `main` (local should track `origin/main`)
+
+## Keep local and GitHub in sync
+
+**Before making changes** (or when starting a session on this project):
+
+```bash
+git fetch origin
+git pull origin main
+```
+
+**After completing requested changes** (when the user wants work saved or published):
+
+1. `git status` — commit all relevant site files (HTML, CSS, JS, images).
+2. One clear commit message per logical change (or one commit if the user asks for a single push).
+3. `git push origin main`
+
+**If push is rejected** (remote has new commits): `git pull --rebase origin main`, then push again. Do not force-push `main` unless the user explicitly asks.
+
+Do not change `git config`. The user is signed into GitHub on this machine.
