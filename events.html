@@ -33,28 +33,36 @@
 
     <section class="content-section">
       <h2>Past Events</h2>
-      <p><strong>National Events</strong> · <strong>Community Events</strong> · <strong>LA Fire Special Events</strong></p>
-      <div class="events-list">
-        <div class="event-card">
-          <h3>Amy McCarthy</h3>
-          <p>Analyst for the Las Vegas Metropolitan Police Department's Information Technology Bureau</p>
+      <div class="events-tabs" role="tablist" aria-label="Event categories">
+        <button type="button" class="events-tab is-active" role="tab" id="tab-national" aria-controls="panel-national" aria-selected="true" data-tab="national">National Events</button>
+        <button type="button" class="events-tab" role="tab" id="tab-community" aria-controls="panel-community" aria-selected="false" data-tab="community">Community Events</button>
+      </div>
+      <div class="events-panel" id="panel-national" role="tabpanel" aria-labelledby="tab-national" data-panel="national">
+        <div class="events-list">
+          <div class="event-card">
+            <h3>Amy McCarthy</h3>
+            <p>Analyst for the Las Vegas Metropolitan Police Department's Information Technology Bureau</p>
+          </div>
+          <div class="event-card">
+            <h3>Ami Vitale</h3>
+            <p>National Geographic Photographer / Filmmaker / Executive Director of Vital Impacts</p>
+          </div>
+          <div class="event-card">
+            <h3>Courtney McAnuff</h3>
+            <p>Vice Chancellor of Rutgers University</p>
+          </div>
+          <div class="event-card">
+            <h3>Keegan Lee</h3>
+            <p>Author, Public Speaker, Tech Ethicist</p>
+          </div>
+          <div class="event-card">
+            <h3>Gisela Sanders Alcántara</h3>
+            <p>Mexican-American Filmmaker / TV Producer & Editor / Disability Activist</p>
+          </div>
         </div>
-        <div class="event-card">
-          <h3>Ami Vitale</h3>
-          <p>National Geographic Photographer / Filmmaker / Executive Director of Vital Impacts</p>
-        </div>
-        <div class="event-card">
-          <h3>Courtney McAnuff</h3>
-          <p>Vice Chancellor of Rutgers University</p>
-        </div>
-        <div class="event-card">
-          <h3>Keegan Lee</h3>
-          <p>Author, Public Speaker, Tech Ethicist</p>
-        </div>
-        <div class="event-card">
-          <h3>Gisela Sanders Alcántara</h3>
-          <p>Mexican-American Filmmaker / TV Producer & Editor / Disability Activist</p>
-        </div>
+      </div>
+      <div class="events-panel is-hidden" id="panel-community" role="tabpanel" aria-labelledby="tab-community" data-panel="community" hidden>
+        <p class="events-empty">No community events listed yet.</p>
       </div>
     </section>
 

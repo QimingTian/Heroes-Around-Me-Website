@@ -1,0 +1,12 @@
+---
+description: Push HAM website changes to the official GitHub repository
+alwaysApply: true
+---
+
+# Git remote and pushes
+
+This project deploys to [QimingTian/Heroes-Around-Me-Website](https://github.com/QimingTian/Heroes-Around-Me-Website).
+
+- **Remote**: `origin` → `https://github.com/QimingTian/Heroes-Around-Me-Website.git`
+- When the user asks to push or publish the site, commit on `main` and run `git push origin main` (one commit per push unless they ask otherwise).
+- Do not change `git config` or force-push `main` unless the user explicitly requests it.
