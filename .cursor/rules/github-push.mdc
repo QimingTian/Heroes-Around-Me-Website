@@ -29,8 +29,8 @@ git pull origin main
 
 ## Vercel deployment
 
-- **Production URL**: https://heroes-around-me-website.vercel.app
-- **Project**: `heroes-around-me-website` on Vercel (GitHub repo connected — pushes to `main` trigger production deploys).
+- **Production URL**: https://heroesaroundme.org (also https://www.heroesaroundme.org)
+- **Project**: `heroes-around-me` on Vercel (GitHub repo connected — pushes to `main` trigger production deploys).
 - **Manual deploy** (if needed): `vercel deploy --prod` from the project root (requires Vercel CLI login).
 
 Do not change `git config`. The user is signed into GitHub on this machine.
